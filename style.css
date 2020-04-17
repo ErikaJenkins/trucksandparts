@@ -1,5 +1,5 @@
 /*
-Theme Name: Trucks and Parts COMBINED SATURDAY!
+Theme Name: Trucks and Parts MASTERS!
 Theme URI:
 Author: Elizabeth Tran and Erika Jenkins
 Description: Trucks and Parts Rough Draft
@@ -54,6 +54,7 @@ p {
 h1 {
   margin-top: 20px;
   color: #012744;
+  font-size: 2rem;
 }
 
 /* ======================================
@@ -67,61 +68,25 @@ h1 {
     2.1 Mobile
 
 ===================*/
-
-/*############################
-      2.2 HAMBURGER MENU STYLING
-############################*/
-.desktop-nav {
-    display: none;
+.textwidget button {
+    display: inline;
+    background-color: #012744;
+    color: white;
+    font-family: 'roboto condensed', sans-serif;
+    font-size: 1rem;
+    margin: 6%;
+    border-color: #012744;
+}
+.cnss-social-icon img {
+    padding: 0;
 }
 
-button{
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  margin-top: 10px;
-  background-color: gray;
-  font-size: 50px;
-}
-
-.show-mobile-nav{
-  display: block;
-  height: 340px;
-  transition: height 0.5s;
-}
-
-.desktop-nav img {
-  display: none;
-}
-
-.menu a {
-    list-style-type: none;
-    text-decoration: none;
-    padding: 39px;
-    color: black;
-}
-
-.menu a:hover {
-    list-style-type: none;
-    text-decoration: none;
-    color: lightgray;
-}
-
-ul#menu-top-menu-1 {
-    list-style-type: none;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-}
 /*MOBILE MAP SIZE*/
 iframe {
     width: 100%;
     padding: 20px;
 }
-/*############################
-   HAMBURGER MENU STYLING END
-############################*/
+
 /* =================
 
     2.3 Desktop Header
@@ -138,33 +103,15 @@ iframe {
 #navblue {
   background-color: #012744;
   padding-top: 8px;
+  display: none;
 }
-#menu-top-menu {
-  display: inline-flex;
-  font-family: 'Arimo', sans-serif;
-  font-weight: bold;
-  list-style-type: none;
-  text-transform: uppercase;
-}
-
-.menu a {
-    list-style-type: none;
-    padding: 39px;
-    color: white;
-}
-
-.menu a:hover {
-    list-style-type: none;
-    text-decoration: none;
-    color: lightgray;
-}
-
-@media (max-width: 769px) {
-  .desktop-nav{
+.menu {
     display: none;
-  }
 }
 
+.desktop-nav{
+  display: none;
+}
 /*-------------------------
 2.5 HERO IMAGE
 --------------------------*/
@@ -189,13 +136,13 @@ iframe {
 
 .widget-hero-image {
     width: 100%;
-    height: 450px;
+    max-height: 450px;
     overflow: hidden;
 }
 
 .widget-testimonial-home{
   width: 100%;
-  height: 800px;
+  height: auto;
 }
 
 .testimonial_rotator_widget_wrap.with-prevnext {
@@ -206,6 +153,7 @@ iframe {
 .widget-roll-off-home, .widget-container-delivery-home, .widget-grapple-boom-home,
 .widget-concrete-mixer-home, .widget-cab-chasis-home {
     width: 100px;
+    margin: auto;
 }
 
 h3.map-tampa-widget-title {
@@ -232,6 +180,15 @@ h3.map-glenmoore-widget-title {
 .testimonial_rotator_widget_wrap h2{
     color: black;
 }
+/*-------------------------
+Sidebar
+-------------------*/
+.widget-right-sidebar ul li {
+    list-style-type: none;
+}
+.widget-right-sidebar a {
+  color: #7a7575;
+}
 /*-------------------------------
 FOOTER
 ----------------------------------*/
@@ -239,10 +196,18 @@ footer {
   background-color: white;
   border-top: 10px solid #012744;
   margin-top: 20px;
+  padding-left: 11%;
 }
 .sfsiplus_footerLnk {
     display: none;
 }
+.textwidget a {
+  color: #7a7575;
+}
+.textwidget img {
+    width: auto;
+}
+
 /*--------------------------------------------
 
 STYLING FOR SPECIFIC PAGES AND POSTS!
@@ -251,10 +216,24 @@ STYLING FOR SPECIFIC PAGES AND POSTS!
 /*-------------------------
 CUSTOM HOME PAGE STYLING
 -----------------------*/
+
+/*----HERO IMAGE----*/
+.heroleft {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.heroleft h1 {
+  color: white;
+  font-size: .8rem;
+  margin-top: 0;
+}
 /*###########################
     TRUCK TYPE STYLING
 
 ###########################*/
+
 
 .trucktypes {
     width: 100%;
@@ -277,6 +256,7 @@ CUSTOM HOME PAGE STYLING
   text-align: center;
   font-size: 20px;
   font-weight: normal;
+  background-color: transparent;
 }
 
 /*###########################
@@ -304,6 +284,7 @@ CUSTOM HOME PAGE STYLING
   text-align: center;
   font-size: 16px;
   font-weight: normal;
+  background-color: transparent;
 }
 
 
@@ -313,7 +294,9 @@ CUSTOM TRUCK POST STYLING
 .image {
   width: 100%;
 }
-
+.container {
+    margin: 1% auto;
+}
 .single-trucks .container ul li {
   list-style: none;
 }
@@ -327,45 +310,114 @@ CUSTOM TRUCK POST STYLING
 
 
 
+/*----------------------
+TRUCKS Page
+---------------*/
+
+.individual-truck h4, h3, p {
+    margin: 0;
+    padding: 3px 0;
+}
+.individual-truck h4 {
+    background-color: #012744;
+    color: white;
+    margin-top: 10px;
+}
+.individual-truck h3, p {
+    background-color: white;
+}
+.individual-truck img {
+    width: 100%;
+    height: auto;
+}
+span.bold {
+    color: #ee3a43;
+}
+.widget-search-trucks, .widget-search-trucks-two {
+    background-color: #ee3a43;
+    color: white;
+    text-transform: uppercase;
+    padding: 22px;
+}
+.container.row.bg-light {
+    margin: auto;
+    padding: 3% 0;
+}
+.pink2 {
+  background-color: #ee3a43;
+}
 /*---------------------------
 BLOG
 ------------------------*/
-a.btn.btn-primary.btn-sm {
+.btn.btn-primary.btn-sm {
     margin-bottom: 23px;
     text-transform: uppercase;
     font-family: 'Roboto Condensed';
     background-color: #ee3a43;
     border-color: #ee3a43;
 }
+.blog img {
+  width: 100%;
+  height: auto;
+}
 /*------------------------
 CONTACT FORM
 --------------------*/
-form#wpforms-form-46 {
-    margin: 0 auto;
-    padding: 1%;
-    width: 340px;
+.wpforms-form {
+    width: 100% !important;
+    max-width: 750px;
     background-color: #e6e6e6;
     font-weight: bold;
     color: #012744;
+    margin: auto;
+    padding: 5px;
 }
-.wpforms-submit-container {
+.wpforms-field-row {
+    display: flow-root;
+}
+.wpforms-one-half {
+    display: inline-grid;
+    padding-right: 4%;
+}
+.wpforms-field-label {
+    margin: 2% 2% 2% 0;
+}
+.wpforms-field-container {
+    padding-left: 3%;
+}
+.wpforms-field-medium {
+    width: 80%;
+}
+.wpforms-field-hp {
+    display: none;
+}
+.pink, .wpforms-submit-container button {
     text-align: center;
-    margin: 20px 0 12px 0;
-}
-button#wpforms-submit-46 {
+    display: block;
     text-transform: uppercase;
     color: white;
     background-color: #ee3a43;
-    padding: 4px;
     font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
+    font-size: 1.3rem;
+    height: inherit;
+    margin: 2% auto;
+    border-color: #ee3a43;
 }
 /*############################
       DESKTOP MENU STYLING
 ############################*/
 
 @media (min-width: 768px){
-
+  h1 {
+    font-size: 3rem;
+  }
+  .heroleft {
+    left: 73%;
+  }
+  .heroleft h1 {
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
   .mobile-nav{
     display: none;
   }
@@ -403,7 +455,7 @@ button#wpforms-submit-46 {
 
   .menu a {
       list-style-type: none;
-      padding: 39px;
+      padding: 16px;
       color: white;
   }
 
@@ -430,7 +482,7 @@ button#wpforms-submit-46 {
   /* Desktop testimonial */
   .widget-testimonial-home{
     width: 100%;
-    height: 300px;
+    height: auto;
   }
 /* Desktop truck types */
   .trucktypes {
@@ -454,6 +506,7 @@ button#wpforms-submit-46 {
     text-align: center;
     font-size: 20px;
     font-weight: normal;
+    background-color: transparent;
   }
   .locations{
     background-color: #ee3a43;
@@ -473,6 +526,12 @@ button#wpforms-submit-46 {
     text-align: center;
     font-size: 16px;
     font-weight: normal;
+    background-color: transparent;
   }
 
+}
+@media (min-width: 990px) {
+  .menu a {
+      padding: 39px;
+    }
 }

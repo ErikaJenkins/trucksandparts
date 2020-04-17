@@ -62,7 +62,33 @@ add_action('init', 'register_my_menus');
 =====================================*/
 
 add_theme_support('post-thumbnails');
-
+register_sidebar(array(
+  'name'          => ('Hero Image'),
+  'id'            => 'hero-image',
+  'description'   => 'Hero image area in home page',
+  'before_widget' => '<div class="widget-hero-image">',
+  'after_widget'  => "</div>",
+  'before_title'  => '<h3 class="hero-image-widget-title">',
+  'after_title'   => '</h3>'
+));
+register_sidebar(array(
+  'name'          => ('Search Trucks'),
+  'id'            => 'search-trucks',
+  'description'   => 'Search bar on truck page',
+  'before_widget' => '<div class="widget-search-trucks">',
+  'after_widget'  => "</div>",
+  'before_title'  => '<h3 class="search-trucks-widget-title">',
+  'after_title'   => '</h3>'
+));
+register_sidebar(array(
+  'name'          => ('Search Trucks Two'),
+  'id'            => 'search-trucks-two',
+  'description'   => 'Search bar 2 on truck page',
+  'before_widget' => '<div class="widget-search-trucks-two">',
+  'after_widget'  => "</div>",
+  'before_title'  => '<h3 class="search-trucks-two-widget-title">',
+  'after_title'   => '</h3>'
+));
 /*===============================
   FOOTER WIDGETS
 =====================================*/
@@ -123,24 +149,8 @@ register_sidebar(array(
     'before_title'  => '<h3 class="header-widget-title">',
     'after_title'   => '</h3>'
   ));
-  register_sidebar(array(
-    'name'          => ('Hero Image'),
-    'id'            => 'hero-image',
-    'description'   => 'Hero image area in home page',
-    'before_widget' => '<div class="widget-hero-image">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="hero-image-widget-title">',
-    'after_title'   => '</h3>'
-  ));
-  register_sidebar(array(
-    'name'          => ('About Us'),
-    'id'            => 'about-us',
-    'description'   => 'About Us widget area in home page',
-    'before_widget' => '<div class="widget-about-us">',
-    'after_widget'  => "</div>",
-    'before_title'  => '<h3 class="about-us-widget-title">',
-    'after_title'   => '</h3>'
-  ));
+
+
   register_sidebar(array(
     'name'          => ('Bottom Left'),
     'id'            => 'bottom-left',

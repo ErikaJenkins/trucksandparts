@@ -5,16 +5,16 @@ Template Post Type: page
 */
 get_header(); ?>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 container1">
       <?php dynamic_sidebar('hero-image'); ?>
+      <div class="heroleft">
+        <h1>NEW & USED</h1>
+        <h1>Trucks for Sale</h1>
+        <button class="pink">CALL</button>
+      </div>
     </div>
   </div>
   <main class="col-md-12">
-    <div class="row">
-      <div class="col-md-12 p-4">
-        <?php dynamic_sidebar('about-us'); ?>
-      </div>
-    </div>
 
     <div class="row justify-content-center">
       <div class="col-md-9">
@@ -25,43 +25,43 @@ get_header(); ?>
     <div class="trucktypes">
       <h2>TRUCK TYPES</h2>
       <p>New, Used, or Reconditioned</p>
-      <div class="row">
-        <div class="col-md-3">
+      <div class="row text-center">
+        <div class="col-md-3 pb-2">
           <?php dynamic_sidebar('front-loader-home'); ?>
-          <a href="404.php" class="btn btn-outline-light ttt">bring some rocks</a>
+          <a href="http://www.model4miracles.com/project/trucks/" class="btn btn-outline-light ttt">FRONT LOADER</a>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pb-2">
           <?php dynamic_sidebar('rear-loader-home'); ?>
-          <a href="404.php" class="btn btn-outline-light justify-content-center">REAR LOADER</a>
+          <a href="http://www.model4miracles.com/project/trucks/" class="btn btn-outline-light justify-content-center">REAR LOADER</a>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pb-2">
           <?php dynamic_sidebar('side-loader-home'); ?>
-          <a href="404.php" class="btn btn-outline-light">SIDE LOADER</a>
+          <a href="http://www.model4miracles.com/project/trucks/" class="btn btn-outline-light">SIDE LOADER</a>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pb-2">
           <?php dynamic_sidebar('roll-off-home'); ?>
-          <a href="404.php" class="btn btn-outline-light">ROLL OFF</a>
+          <a href="http://www.model4miracles.com/project/trucks/" class="btn btn-outline-light">ROLL OFF</a>
         </div>
       </div>
     </div>
 
     <div class="trucktypes">
-      <div class="row">
-        <div class="col-md-3">
+      <div class="row text-center">
+        <div class="col-md-3 pb-2">
           <?php dynamic_sidebar('container-delivery-home'); ?>
-          <a href="404.php" class="btn btn-outline-light">CONTAINER DELIVERY</a>
+          <a href="http://www.model4miracles.com/project/trucks/" class="btn btn-outline-light">CONTAINER DELIVERY</a>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pb-2">
           <?php dynamic_sidebar('grapple-boom-home'); ?>
-          <a href="#" class="btn btn-outline-light">GRAPPLE BOOM</a>
+          <a href="http://www.model4miracles.com/project/trucks/" class="btn btn-outline-light">GRAPPLE BOOM</a>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pb-2">
           <?php dynamic_sidebar('concrete-mixer-home'); ?>
-          <a href="404.php" class="btn btn-outline-light">CONCRETE MIXER</a>
+          <a href="http://www.model4miracles.com/project/trucks/" class="btn btn-outline-light">CONCRETE MIXER</a>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 pb-2">
           <?php dynamic_sidebar('cab-chasis-home'); ?>
-          <a href="404.php" class="btn btn-outline-light">CAB & CHASIS</a>
+          <a href="http://www.model4miracles.com/project/trucks/" class="btn btn-outline-light">CAB & CHASIS</a>
         </div>
       </div>
     </div>
